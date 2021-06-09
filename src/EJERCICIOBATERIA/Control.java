@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class Control extends Thread{
     Bateria bateria;
-    //  CREA UNA PISCINA LLAMADA EXECUTOR
+    //  CREA UNA PISCINA LLAMADA EXECUTOR   Y LE PONES QUE TIENE 4 PROCESOS
     ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(4);
 
     public Control(Bateria bateria) {
