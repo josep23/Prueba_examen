@@ -5,6 +5,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class Control extends Thread{
     Bateria bateria;
+    //  CREA UNA PISCINA LLAMADA EXECUTOR
     ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(4);
 
     public Control(Bateria bateria) {
@@ -34,12 +35,13 @@ public class Control extends Thread{
             }
         }
     };
-
+    //UN VOID
     void carregar() {
         System.out.println("Carregant bateria...");
         executor.submit(carrega);
     }
 
+    //ENCIENDE EL RUNABLE ES DECIR LO EJECUTA
     Runnable carrega = new Runnable() {
         public void run() {
             //MIENTRAS LA BATERIA NO LLEGUE A 100 LE HACE UN BATERIA CARGAR QUE LE SUMA 1 A NIVEL

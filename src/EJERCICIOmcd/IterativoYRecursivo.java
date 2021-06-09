@@ -37,7 +37,7 @@ public class IterativoYRecursivo extends RecursiveTask<Integer> {
         }
     }
 
-
+    //ES LA VARIABLE QUE SE EJECUTA Y COMPARA QUE USAR SI ITERACTIVO O RECURSIVO
     @Override
     protected Integer compute() {
         if (A < max){
