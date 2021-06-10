@@ -12,7 +12,7 @@ public class Control extends Thread{
         this.bateria = bateria;
     }
 
-    //EJECUTA EL RUNNABLE
+    //UN VOID QUE EJECUTA EL RUNNABLE DESCARGAR
     void descargar() {
         executor.submit(descarregar);
     }
@@ -35,7 +35,7 @@ public class Control extends Thread{
             }
         }
     };
-    //UN VOID
+    //UN VOID QUE EJECUTA EL RUNNABLE CARGAR
     void carregar() {
         System.out.println("Carregant bateria...");
         executor.submit(carrega);
