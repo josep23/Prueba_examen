@@ -28,7 +28,7 @@ public class IterativoYRecursivo extends RecursiveTask<Integer> {
         if (NumeroB==0){
             return NumeroA;
         }else{
-            //CREAS UN PROGRAMA QUE TENGA EL NUMEROB Y NUMEROA%NUMEROB
+            //INSTANCIAMOS LA CLASE ITERATIVOYRECURSIVO Y QUE EJECUTE EL PROGRAMA QUE TENGA EL NUMEROB Y NUMEROA%NUMEROB
             IterativoYRecursivo iterativoYRecursivo = new IterativoYRecursivo(NumeroB,NumeroA%NumeroB);
             //Y LO GUARDE EN UN FORK QUE ES UNA COLA QUE HACE QUE SE EJECUTE CUANDO PUEDA
             iterativoYRecursivo.fork();
